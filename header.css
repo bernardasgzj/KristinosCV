@@ -1,0 +1,27 @@
+/* Style for header */
+.header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: var(--pink);
+    top: 0;
+    z-index: 5;
+}
+
+.header .icon {
+    font-size: 24px;
+}
+
+/* Style for the navigation links on the right */
+.header .navigation a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.header .navigation a:hover {
+    color: #007bff;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomly Appearing and Disappearing Stars</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .star {
+            position: absolute;
+            opacity: 0; /* Start invisible */
+            transition: opacity 1s ease; /* Fade in and out animation */
+        }
+
+        img.star-img {
+            width: 100%; /* Control size via parent div */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    const maxStars = 100; // Maximum number of stars on the screen at any time
+    const starCreationInterval = 300; // Time in milliseconds between star creation
+    const starLifespan = 3000; // Time in milliseconds for how long a star stays before disappearing
+
+    function createRandomStar() {
+        const star = document.createElement('div');
+        star.classList.add('star');
+
+        // Random size for the star (scale from 10px to 50px)
+        const size = Math.random() * 10 + 4 + 'px'; // Size between 10px and 50px
+        star.style.width = size;
+        star.style.height = size;
+
+        // Random position (within the viewport)
+        const x = Math.random() * window.innerWidth + 'px';
+        const y = Math.random() * window.innerHeight + 'px';
+        star.style.left = x;
+        star.style.top = y;
+
+        // Create an <img> element for the star SVG
+        const starImg = document.createElement('img');
+        starImg.src = 'assets/star.svg'; // Path to your SVG file
+        starImg.classList.add('star-img');
+        star.appendChild(starImg);
+
+        // Add the star to the DOM
+        document.body.appendChild(star);
+
+        // Make the star fade in
+        requestAnimationFrame(() => {
+            star.style.opacity = Math.random() * 0.8 + 0.2; // Random opacity between 0.2 and 1
+        });
+
+        // Remove the star after the specified lifespan
+        setTimeout(() => {
+            star.style.opacity = 0; // Fade out
+            setTimeout(() => {
+                star.remove(); // Remove from DOM after the fade-out transition
+            }, 1000); // Match this with the CSS transition duration (1 second)
+        }, starLifespan);
+    }
+
+    // Create stars at random intervals
+    setInterval(() => {
+        if (document.body.querySelectorAll('.star').length < maxStars) {
+            createRandomStar();
+        }
+    }, starCreationInterval);
+</script>
+
+</body>
+</html>

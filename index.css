@@ -1,0 +1,128 @@
+.component-landing {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 230px;
+    padding-bottom: 310px;
+    position: relative;
+}
+
+.name {
+    background-color: var(--light-pink);
+    z-index: 2;
+}
+
+.name img {
+    padding: 0px 14px;
+}
+
+.component-landing img.cloud-right {
+    position: absolute;
+    right: -500px;
+    bottom: -5px;
+    width: 500px;
+    animation: slide-out-right 300ms linear;
+}
+
+.component-landing img.cloud-left {
+    position: absolute;
+    left: -500px;
+    bottom: -5px;
+    width: 500px;
+    animation: slide-out-left 300ms linear;
+}
+
+.component-landing.active img.cloud-left {
+    left: 0px;
+    animation: slide-right 300ms linear;
+}
+
+.component-landing.active img.cloud-right {
+    right: 0;
+    animation: slide-left 300ms linear;
+}
+
+
+@keyframes slide-right {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slide-out-right {
+    0% { transform: translateX(-500px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slide-left {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slide-out-left {
+    0% { transform: translateX(500px); }
+    100% { transform: translateX(0); }
+}
+
+.component-works {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 200px;
+    padding-bottom: 145px;
+    position: relative;
+}
+
+.component-works .title{
+    margin-bottom: 70px;
+}
+
+.component-introduction {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 0px;
+    padding-bottom: 145px;
+    position: relative;
+}
+
+.component-introduction img.cloud-right {
+    position: absolute;
+    right: -500px;
+    bottom: -5px;
+    width: 500px;
+    animation: slide-out-right 300ms linear;
+}
+
+.component-introduction.active img.cloud-right {
+    right: 0;
+    animation: slide-left 300ms linear;
+}
+
+
+.component-introduction .text {
+    padding-top: 100px;
+    width: 45%;
+}
+
+
+.component-introduction .text {
+    padding-top: 100px;
+    width: 45%;
+}
+
+.component-introduction .text .title {
+    font-family: 'Kalam';
+    font-weight: var(--title-weight);
+    font-size: var(--title-size);
+}
+
+.component-specialization {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 200px;
+    padding-bottom: 145px;
+    position: relative;
+}
+
+.component-specialization .title{
+    margin-bottom: 70px;
+}

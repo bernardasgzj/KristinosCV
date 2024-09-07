@@ -1,0 +1,59 @@
+.introduction {
+    padding-top: 100px;
+    width: 45%;
+}
+
+.introduction .title {
+    font-family: 'Kalam';
+    font-weight: var(--title-weight);
+    font-size: var(--title-size);
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+.section {
+    width: 45%;
+}
+
+.row + .section-title {
+    margin-top: 50px;
+}
+
+.section .section-title {
+    font-family: 'Kalam';
+    font-weight: var(--title-weight);
+    font-size: var(--title-size);
+}
+
+.section .icons img {
+    width: 70px;
+    height: 70px;
+}
+
+.section .row + .row {
+    padding-top: 60px;
+}
+
+.section .row .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.section .row .info .sub-title {
+    color: var(--light-green);
+}
+
+.section .row .row-title {
+    font-size: 24px;
+    font-family: 'Spartan';
+}
+
+.section .row .info .date {
+    color: var(--light-green);
+}

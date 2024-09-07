@@ -1,0 +1,58 @@
+html, *
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+  }
+
+  .slider {
+    display: flex;
+    width: max-content;
+    animation: slide 15s linear infinite;
+  }
+
+  .slider img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .slider a {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .slider img:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .slider:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    z-index: 1;
+  }
+

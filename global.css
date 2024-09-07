@@ -1,0 +1,42 @@
+:root {
+    --light-pink: #E8CAD9;
+    --pink: #E49BB6;
+    --green: #052705;
+    --light-green: #064E06;
+    --white: #ffffff;
+    --white-background: #EDEDED;
+
+    --title-weight: 700;
+    --title-size: 64px;
+}
+
+* {
+    font-family: 'Spartan';
+    font-weight: 400;
+}
+
+body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    color: var(--green);
+    background-color: var(--light-pink);
+}
+
+.wrapper {
+    position: relative;
+    background-color: var(--light-pink);
+    padding: 0px 100px;
+}
+
+.section .title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: var(--title-size);
+    z-index: 2;
+    font-family: "Kalam";
+}

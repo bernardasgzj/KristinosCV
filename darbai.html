@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            position: relative;
+            background-color: pink; /* Ensures stars are visible */
+            height: 100vh;
+        }
+
+        .star {
+            position: absolute;
+            opacity: 0; /* Start invisible */
+            transition: opacity 1s ease; /* Fade in and out animation */
+        }
+
+        img.star-img {
+            width: 100%; /* Control size via parent div */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><div class="icon">🔍</div></a>
+        <div class="navigation">
+            <a href="apie.html">Apie</a>
+            <a href="darbai.html">Darbai</a>
+            <a href="paslaugos.html">Paslaugos</a>
+            <a href="kontaktai.html">Kontaktai</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="name">
+            Kristina Kašūraitė
+        </div>
+    </div>
+</body>
+</html>
