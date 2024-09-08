@@ -6,8 +6,10 @@
     --white: #ffffff;
     --white-background: #EDEDED;
 
-    --title-weight: 700;
+    --title-weight: 800;
     --title-size: 64px;
+    --sub-title: 24px;
+    --text: 16px;
 }
 
 * {
