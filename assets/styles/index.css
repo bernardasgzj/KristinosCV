@@ -4,6 +4,7 @@
     padding-top: 230px;
     padding-bottom: 310px;
     position: relative;
+    overflow: hidden;
 }
 
 .name {
@@ -81,6 +82,7 @@
     padding-top: 0px;
     padding-bottom: 145px;
     position: relative;
+    overflow: hidden;
 }
 
 .component-introduction img.cloud-right {
