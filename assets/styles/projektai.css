@@ -55,6 +55,7 @@
     transition: opacity 0.3s ease;
     height: 429px;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .hover-container:hover::after,
