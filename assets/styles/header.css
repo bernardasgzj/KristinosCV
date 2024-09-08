@@ -20,8 +20,11 @@
     text-decoration: none;
     color: var(--white);
     font-size: 16px;
+    opacity: .7;
+    transition: 300ms;
 }
 
 .header .navigation a:hover {
-    color: #007bff;
+    opacity: 1;
+    transition: 300ms;
 }
