@@ -11,23 +11,6 @@
     <link rel="stylesheet" href="assets/styles/footer.css">
     <link rel="icon" type="image/x-icon" href="assets/icons/icon.svg">
     <title>Kristina - Grafinė dizainerė</title>
-
-    <style>
-        body {
-            margin: 0;
-        }
-
-        .star {
-            position: absolute;
-            opacity: 0; /* Start invisible */
-            transition: opacity 1s ease; /* Fade in and out animation */
-        }
-
-        img.star-img {
-            width: 100%; /* Control size via parent div */
-            height: auto;
-        }
-    </style>
 </head>
 <body>
     <div class="header">
@@ -63,23 +46,18 @@
             <img src="assets/icons/star.svg" alt="Mobiliojio projektas">
             <img src="assets/icons/line.svg" alt="Mobiliojio projektas">
         </div>
-        <!-- <div class="slider-container">
-            <div class="slider">
-            <a href="https://www.facebook.com/profile.php?id=61558315077861"><img src="assets/kirpykla.jpg" alt="Kirpyklos ikona" target="_blank"></a>
-            <a href="#"><img src="assets/projektas-1.png" alt="Mokyklos projektas"></a>
-            <a href="#"><img src="assets/mobiliojio-projektas.png" alt="Mobiliojio projektas"></a>
-            <a href="#"><img src="assets/vieno-puslapio-tinklapis.png" alt="Vieno puslapio tinklapis "></a>
-            <a href="https://www.facebook.com/profile.php?id=61558315077861"><img src="assets/kirpykla.jpg" alt="Kirpyklos ikona" target="_blank"></a>
-            <a href="#"><img src="assets/projektas-1.png" alt="Mokyklos projektas"></a>
-            <a href="#"><img src="assets/mobiliojio-projektas.png" alt="Mobiliojio projektas"></a>
-            <a href="#"><img src="assets/vieno-puslapio-tinklapis.png" alt="Vieno puslapio tinklapis "></a>
+        <div class="image-container">
+            <div class="images">
+                <a href="https://www.facebook.com/profile.php?id=61558315077861"><img src="assets/kirpykla.jpg" alt="Kirpyklos ikona" target="_blank"></a>
+                <a href="#"><img src="assets/projektas-1.png" alt="Mokyklos projektas"></a>
+                <a href="#"><img src="assets/mobiliojio-projektas.png" alt="Mobiliojio projektas"></a>
             </div>
-        </div> -->
+        </div>
     </div>
 
     <div class="component-introduction section">
         <div class="text">
-            <div class="title">
+            <div class="sub-section-title">
                 Sveiki
             </div>
             Esu Kristina Kašūraitė, grafikos ir UI/UX dizainerė. Turiu metus patirties tačiau nuolat tobulinu žinias dalyvaudama kursuose, skaitydama ir mokydamasi iš kitų. Koncentruojuosi į svetainių dizaino, branding’o ir iliustracijų kūrimą.    
@@ -132,6 +110,19 @@
                 </div>
             </div>
         </div>
+        <div class="component-contacts section">
+            <div class="text">
+                <div class="sub-section-title">
+                    Dirbkime kartu
+                </div>
+                <div class="phone-number">
+                    Tel. numeris: +37069238003
+                </div>
+                <div class="email">
+                    El. Paštas: KristinaK8600@gmail.com
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <img src="assets/icons/cloud.svg">
@@ -157,8 +148,6 @@
             if (isInViewport(element)) {
             //if in Viewport
             element.classList.add("active");
-            } else {
-                element.classList.remove("active");
             }
         });
         }, false);
@@ -167,69 +156,10 @@
         findMe.forEach(element => {
             //for each .thisisatest
             if (isInViewport(element)) {
-            //if in Viewport
                 element.classList.add("active");
-            } else {
-                element.classList.remove("active");
             }
         });
         }, false);
     </script>
-        <!-- const maxStars = 50; // Maximum number of stars on the screen at any time
-        const starCreationInterval = 300; // Time in milliseconds between star creation
-        const starLifespan = 3000; // Time in milliseconds for how long a star stays before disappearing
-
-        function createRandomStar() {
-            const star = document.createElement('div');
-            star.classList.add('star');
-
-            // Random size for the star (scale from 10px to 50px)
-            const size = Math.random() * 25 + 8 + 'px'; // Size between 10px and 50px
-            star.style.width = size;
-            star.style.height = size;
-
-            // Random position (within the .wrapper element)
-            const wrapper = document.querySelector('.wrapper');
-            const x = Math.random() * wrapper.clientWidth + 'px';
-            const y = Math.random() * wrapper.clientHeight + 'px';
-            star.style.left = x;
-            star.style.top = y;
-
-            // Create an <img> element for the star SVG
-            const starImg = document.createElement('img');
-            starImg.src = 'assets/star.svg'; // Path to your SVG file
-            starImg.classList.add('star-img');
-            star.appendChild(starImg);
-
-            // Add the star to the .wrapper div
-            wrapper.appendChild(star);
-
-            // Make the star fade in
-            requestAnimationFrame(() => {
-                star.style.opacity = Math.random() * 1 + 0.4; // Random opacity between 0.2 and 1
-            });
-
-            // Remove the star after the specified lifespan
-            setTimeout(() => {
-                star.style.opacity = 0; // Fade out
-                setTimeout(() => {
-                    star.remove(); // Remove from DOM after the fade-out transition
-                }, 1000); // Match this with the CSS transition duration (1 second)
-            }, getRandomIntInclusive(1000, 10000));
-        }
-
-        // Create stars at random intervals
-        setInterval(() => {
-            if (document.querySelectorAll('.wrapper .star').length < maxStars) {
-                createRandomStar();
-            }
-        }, starCreationInterval);
-
-        function getRandomIntInclusive(min, max) {
-            const minCeiled = Math.ceil(min);
-            const maxFloored = Math.floor(max);
-            return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
-        }
-    </script> -->
 </body>
 </html>

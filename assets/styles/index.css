@@ -126,3 +126,18 @@
 .component-specialization .title{
     margin-bottom: 70px;
 }
+.component-contacts {
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 145px;
+    position: relative;
+}
+
+.sub-section-title {
+    display: block;
+    font-family: 'Kalam';
+    font-weight: var(--title-weight);
+    font-size: var(--title-size);
+    font-size: 64px;
+    font-weight: 500;
+}
