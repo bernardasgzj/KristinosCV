@@ -29,9 +29,16 @@
     font-size: var(--title-size);
 }
 
+.section .icons {
+    display: flex;
+    justify-content: space-between;
+}
+
 .section .icons img {
     width: 70px;
     height: 70px;
+    background-color: black;
+    border-radius: 8px;
 }
 
 .section .row + .row {
