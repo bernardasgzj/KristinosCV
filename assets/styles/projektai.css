@@ -13,8 +13,9 @@
     display: inline-block;
 }
 
-.hover-container + .hover-container {
+.hover-container {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .image {
