@@ -16,6 +16,10 @@
     padding: 0px 14px;
 }
 
+.component-landing .title .text {
+    font-family: 'Kalam';
+}
+
 .component-landing img.cloud-right {
     position: absolute;
     right: -500px;
@@ -73,6 +77,7 @@
 
 .component-works .title{
     margin-bottom: 70px;
+    font-family: 'Kalam';
 }
 
 .component-introduction {
