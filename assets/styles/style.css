@@ -3,24 +3,22 @@ html, *
     box-sizing: border-box;
 }
 
-
-
 .image-container {
     width: 100%;
     overflow: hidden;
     position: relative;
     z-index: 2;
-  }
+}
 
-  .images {
+.images {
 
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .images img {
+.images img {
     width: 300px;
     height: 300px;
-  }
+}
 
 

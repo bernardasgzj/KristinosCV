@@ -70,3 +70,42 @@
     text-decoration: none;
     color: black;
 }
+
+.project-page .card-component {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.project-page .card-component .design-details .detail {
+    display: inline-flex;
+}
+
+.project-page .card-component .design-details .detail .list {
+    display: inline-flex;
+}
+
+.project-page .card-component .design-details .detail .color .sample {
+    width: 100px;
+    height: 100px;
+}
+
+.project-page .card-component .design-details .detail .color .sample.hash-000000 {
+    background-color: #000000;
+}
+
+.project-page .card-component .design-details .detail .color .sample.hash-FFD140 {
+    background-color: #FFD140;
+}
+
+/* .design-details .detail .title{
+
+} */
+
+/* .design-details .detail .list.color{
+
+} */
+
+/* .sample
+.name */

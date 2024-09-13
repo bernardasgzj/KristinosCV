@@ -11,16 +11,19 @@
 .hover-container {
     position: relative;
     display: inline-block;
+    max-width: 525px;
+    line-height: 0;
+}
+
+.hover-container img {
+    max-width: 525px;
+    border-radius: 12px;
+    line-height: 0;
 }
 
 .hover-container {
     margin-top: 50px;
     margin-bottom: 50px;
-}
-
-.image {
-    width: 100%;
-    height: auto;
 }
 
 .overlay-content {
@@ -32,6 +35,23 @@
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 10;
+    width: 100%;
+}
+
+.overlay-content .title {
+    color: white;
+    font-size: 28px;
+    width: 100%;
+    font-family: "Spartan";
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.overlay-content .sub-title {
+    color: white;
+    font-size: 16px;
+    font-family: "Spartan";
 }
 
 .title {
@@ -51,9 +71,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent layer */
+    background-color: rgba(41, 1, 18, 0.6); /* semi-transparent layer */
     transition: opacity 0.3s ease;
-    height: 429px;
+    opacity: 0;
     border-radius: 12px;
     cursor: pointer;
 }
@@ -61,6 +81,5 @@
 .hover-container:hover::after,
 .hover-container:hover .overlay-content {
     opacity: 1;
-    z-index: 4;
     color: white;
 }
